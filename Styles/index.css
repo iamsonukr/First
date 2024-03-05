@@ -1,0 +1,169 @@
+body{
+    font-family: poppins;
+}
+.sectionOne{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* .icon{
+    height: 300px;
+} */
+
+.iconImg{
+    width: 300px;
+}
+
+.navItems{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navItem{
+    padding: 15px;
+    font-weight: 500;
+}
+
+.navItems li{
+    
+    list-style-type: none;
+    font-size: 18px;
+
+}
+
+.regButton{
+    padding: 20px;
+    background-color: aqua;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+
+/*  Section 2 */
+.headerTextContent{
+    padding: 28px 200px;
+    text-align: center;
+    font-size: 48px;
+    
+    
+}
+
+/* Section 3 */
+
+.sectionThree{
+    display: flex;
+    padding: 100px;
+    background-color: #F2F5FA;
+}
+
+.threeOne{
+
+    width: 50%;
+}
+.threeOne img{
+    width: 600px;
+}
+
+.threeTwo{
+    width: 50%;
+    padding: 100px;
+}
+
+.threeTwo p{
+    font-size: 18px;
+}
+
+
+/* Section 4 */
+
+.sectionFour{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f5fa;
+    gap: 30px;
+}
+
+.secFourImages{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f2f5fa;
+}
+.secFourImg{
+    width: 150px;
+    padding: 30px;
+    
+}
+
+/* Section six */
+.secSixTitle{
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.secSixCols{
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+}
+
+.secSixCol1 img{
+    width: 800px;
+}
+.secSixCol2 p{
+    font-size: 18px;
+}
+
+
+/* Footer */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 50px;
+    background-color: rgb(227, 233, 249);
+}
+
+.footSecOne{
+    width: 25%;
+}
+
+.footSecOne img{
+    width: 300px;
+}
+
+.footSecTwo{
+    width: 25%;
+}
+.footSecTwoTitle{
+
+}
+
+.footSecThree{
+    width: 25%;
+}
+
+.footSecTwoTitle{
+
+}
+
+.footSecFour{
+    width: 25%;
+}
+
+.footSecTwoTitle{
+    
+}
+
+.footListItems li{
+    text-decoration: none;
+    list-style-type: none;
+    padding-left: 100 !important;
+}
+

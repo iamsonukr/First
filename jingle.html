@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif !important;
+        text-decoration: none;
+        
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+   
+    section {
+	 background: #f4f4f4;
+	 padding: 50px 0;
+
+    
+}
+
+@media only screen and (max-width: 767px) {
+    /* #talk {
+        margin: 20px;
+        width: 100px;
+    } */
+}
+
+.title1{
+        font-size: 18px;
+     }
+     .heading1{
+        font-size: 24px;
+     }
+     .about1{
+        font-size: 18px;
+     }
+ .container {
+	 max-width: 1044px;
+	 margin: 0 auto;
+	 padding: 0 20px;
+}
+ .carousel {
+	 display: block;
+	 text-align: left;
+	 position: relative;
+	 margin-bottom: 22px;
+}
+ .carousel > input {
+	 clip: rect(1px, 1px, 1px, 1px);
+	 clip-path: inset(50%);
+	 height: 1px;
+	 width: 1px;
+	 margin: -1px;
+	 overflow: hidden;
+	 padding: 0;
+	 position: absolute;
+}
+ .carousel > input:nth-of-type(6):checked ~ .carousel__slides .carousel__slide:first-of-type {
+	 margin-left: -500%;
+}
+ .carousel > input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {
+	 margin-left: -400%;
+}
+ .carousel > input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type {
+	 margin-left: -300%;
+}
+ .carousel > input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type {
+	 margin-left: -200%;
+}
+ .carousel > input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type {
+	 margin-left: -100%;
+}
+ .carousel > input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type {
+	 margin-left: 0%;
+}
+ .carousel > input:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
+	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+ .carousel > input:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
+	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+ .carousel > input:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
+	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+ .carousel > input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
+	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+ .carousel > input:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
+	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+ .carousel > input:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
+	 box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+ .carousel__slides {
+	 position: relative;
+	 z-index: 1;
+	 padding: 0;
+	 margin: 0;
+	 overflow: hidden;
+	 white-space: nowrap;
+	 box-sizing: border-box;
+	 display: flex;
+}
+ .carousel__slide {
+	 position: relative;
+	 display: block;
+	 flex: 1 0 100%;
+	 width: 100%;
+	 height: 100%;
+	 overflow: hidden;
+	 transition: all 300ms ease-out;
+	 /* vertical-align: top; */
+	 box-sizing: border-box;
+	 white-space: normal;
+}
+ .carousel__slide figure {
+	 display: flex;
+	 margin: 0;
+}
+ .carousel__slide div {
+	 position: relative;
+	 width: 70%;
+}
+ .carousel__slide div:before {
+	 display: block;
+	 content: "";
+	 width: 100%;
+	 padding-top: 66.6666666667%;
+}
+ .carousel__slide div > img {
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 width: 100%;
+	 height: 100%;
+}
+ .carousel__slide img {
+	 display: block;
+	 flex: 1 1 auto;
+	 object-fit: cover;
+}
+ .carousel__slide figcaption {
+	 align-self: flex-end;
+	 padding: 20px 20px 0 20px;
+	 flex: 0 0 auto;
+	 width: 25%;
+	 min-width: 200px;
+}
+ .carousel__slide .credit {
+	 margin-top: 1rem;
+	 color: rgba(0, 0, 0, 0.5);
+	 display: block;
+}
+ .carousel__slide.scrollable {
+	 overflow-y: scroll;
+}
+ .carousel__thumbnails {
+	 list-style: none;
+	 padding: 0;
+	 margin: 0;
+	 display: flex;
+	 margin: 0 -10px;
+}
+ .carousel__slides + .carousel__thumbnails {
+	 margin-top: 20px;
+}
+ .carousel__thumbnails li {
+	 flex: 1 1 auto;
+	 max-width: calc((100% / 6) - 20px);
+	 margin: 0 10px;
+	 transition: all 300ms ease-in-out;
+}
+.figItems * {
+    font-family: monospace;
+    font-style: normal;
+}
+ 
+</style>
+<body>
+    <section>
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://vasumittal.com/cdn/shop/files/Fuel.jpg?v=1686387822&width=700" alt="">
+                            </div>
+                            <figcaption>
+                                <p class="title1">SIMPLE AND SUSTAINABLE NUTRITION</p>
+                                <p class="heading1">FUEL FOR SUCCESS</p>
+                                <p class="about1">Calculating macronutrients and calories can be very complex at times, so leave that up to me. I’ll factor in your likes, dislikes and dietary preferences to make sure the program is super enjoyable and easy to stick with.</p>
+                                
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://vasumittal.com/cdn/shop/files/V.jpg?v=1686352220&width=700" alt="">
+                            </div>
+                            <figcaption>
+                                <p class="title1">SIMPLE AND SUSTAINABLE NUTRITION</p>
+                                <p class="heading1">FUEL FOR SUCCESS</p>
+                                <p class="about1">Calculating macronutrients and calories can be very complex at times, so leave that up to me. I’ll factor in your likes, dislikes and dietary preferences to make sure the program is super enjoyable and easy to stick with.</p>                           
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://vasumittal.com/cdn/shop/files/Savior.jpg?v=1686349400&width=700" alt="">
+                            </div>
+                            <figcaption>
+                                <p class="title1">SIMPLE AND SUSTAINABLE NUTRITION</p>
+                                <p class="heading1">FUEL FOR SUCCESS</p>
+                                <p class="about1">Calculating macronutrients and calories can be very complex at times, so leave that up to me. I’ll factor in your likes, dislikes and dietary preferences to make sure the program is super enjoyable and easy to stick with.</p>                           
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div>
+                                <img src="https://picsum.photos/id/1045/800/450" alt="">
+                            </div>
+                            <figcaption class="figItems">
+                                <p class="title1">SIMPLE AND SUSTAINABLE NUTRITION</p>
+                                <p class="heading1">FUEL FOR SUCCESS</p>
+                                <p class="about1">Calculating macronutrients and calories can be very complex at times, so leave that up to me. I’ll factor in your likes, dislikes and dietary preferences to make sure the program is super enjoyable and easy to stick with.</p>                           
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>    
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1">MEAL PLAN</label>
+                    </li>
+                    <li>
+                        <label for="slide-2">TRAINING</label>
+                    </li>
+                    <li>
+                        <label for="slide-3" id="talk">CONTACT</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>  
+    
+</body>
+</html>
