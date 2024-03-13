@@ -31,16 +31,32 @@ body{
 .navItems li{
     
     list-style-type: none;
-    font-size: 18px;
+    font-size: 14px;
+    position: relative;
 
 }
+.navItems li:hover{
+    
+    color: #00bbee;
+    cursor: pointer;
+}
+.navItems li:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px; /* Adjust this value as needed */
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: #00bbee;
+  }
 
 .regButton{
-    padding: 20px;
-    background-color: aqua;
-    font-size: 16px;
-    border-radius: 10px;
+    padding: 20px 40px;
+    background-color: #0000ff;
+    font-size: 14px;
+    border-radius: 5px 5px 5px 0px;
     border: none;
+    color: white;
 }
 
 /*  Section 2 */
@@ -57,15 +73,12 @@ body{
 .sectionThree{
     display: flex;
     padding: 100px;
+    /* flex-wrap: wrap; */
     background-color: #F2F5FA;
 }
 
-.threeOne{
-
-    width: 50%;
-}
 .threeOne img{
-    width: 600px;
+    width: 100%;
 }
 
 .threeTwo{
@@ -98,6 +111,17 @@ body{
     padding: 30px;
     
 }
+/* Section 5 */
+
+.sectionFive{
+    display: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.fiveVideo img{
+    width: 700px;
+}
 
 /* Section six */
 .secSixTitle{
@@ -126,8 +150,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 50px;
-    background-color: rgb(227, 233, 249);
+    padding: 80px 90px;
+    background-color:#e6eaed;
 }
 
 .footSecOne{
@@ -136,13 +160,19 @@ body{
 
 .footSecOne img{
     width: 300px;
+    text-align: center;
 }
 
 .footSecTwo{
     width: 25%;
+    text-align: center;
 }
 .footSecTwoTitle{
+    text-align: center;
 
+}
+.threeTwoContent{
+    text-align: center;
 }
 
 .footSecThree{
@@ -161,9 +191,61 @@ body{
     
 }
 
-.footListItems li{
-    text-decoration: none;
+.footListItems p{
+    /* text-decoration: none;
     list-style-type: none;
-    padding-left: 100 !important;
+    padding-left: 100 !important; */
+    color: #00bbee;
 }
+
+.footSecThree p span{
+    color: #000000;
+}
+.footSecThree p{
+    color: #00bbee;
+}
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  @media only screen and (max-width:728px)  {
+    .navItems{
+        flex-direction: column;
+    }
+    .headerTextContent{
+        padding: 0px;
+        font-size: 26px;
+    }
+    /* .sectionThree{
+        padding: 10px;
+    }
+    .threeTwo{
+        padding: 0px;
+    } */
+    
+    
+  }
 

@@ -5,7 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles/index.css">
-    <title>Document</title>
+    <title>Document</title> <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+        </script>
 </head>
 
 <body>
@@ -81,6 +96,31 @@
         </div>
     </div>
 
+    <!-- ssection 5 -->
+    <!-- <div class="sectionFive">
+        <div class="faq">
+
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+            
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+            
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+        </div>
+
+        <div class="fiveVideo">
+            <img src="https://kreativantech.com/wp-content/uploads/2021/04/1130.jpg" alt="">
+        </div>
+    </div> -->
+
     <!-- SECTION 6 -->
     <div class="sectionSix">
         <h1 class="secSixTitle">
@@ -107,36 +147,37 @@
         </div>
         <div class="footSecTwo">
             <p class="footSecTwoTitle">OUR SERVICES</p>
-            <ul class="footListItems">
-                <li>Web Development/Designing</li>
-                <li>App Development</li>
-                <li>Digital Marketing</li>
-                <li>Content Writing</li>
-                <li>UX/UI Designing</li>
-            </ul>
+            <div class="footListItems">
+                <p>Web Development/Designing</p>
+                <p>App Development</p>
+                <p>Digital Marketing</p>
+                <p>Content Writing</p>
+                <p>UX/UI Designing</p>
+            </div>
 
         </div>
         <div class="footSecThree">
             <p class="footSecThreeTitle">CONTACT US</p>
-            <p><Span>E-Mail</Span>Kreativantech@gmail.com</p>
-            <p><Span>Address-</Span>Aeren Building, Plot No. 14, IT Park Rd, opposite Infosys, Phase - I, Sector 13, Chandigarh, Panchkula, Chandigarh 160101</p>
+            <p><Span>E-Mail </Span>Kreativantech@gmail.com</p>
+            <p><Span>Address- </Span>Aeren Building, Plot No. 14,<br> IT Park Rd, opposite Infosys,<br> Phase - I, Sector 13, Chandigarh,<br> Panchkula, Chandigarh 160101</p>
             <p><Span>Tel-</Span>8264470355</p>
 
 
         </div>
         <div class="footSecFour">
             <p class="footSecFourTitle">OUR COMPANY</p>
-            <ul class="footListItems">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Training</li>
-                <li>Contact Us</li>
-                <li>Privacy Policy</li>
-            </ul>
+            <div class="footListItems">
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Services</p>
+                <p>Training</p>
+                <p>Contact Us</p>
+                <p>Privacy Policy</p>
+            </div>
 
         </div>
     </div>
+   
 </body>
 
 </html>
